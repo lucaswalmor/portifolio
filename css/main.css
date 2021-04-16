@@ -18,3 +18,17 @@ main {
 .card {
     width: 32%;
 }
+
+.login img {
+    width: 1110px;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    padding-top: 120px;
+}
+
+.button2 {
+    padding-top: 96px;
+}
