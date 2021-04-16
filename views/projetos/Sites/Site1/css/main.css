@@ -1,0 +1,17 @@
+.imagem {
+    width: 100%;
+    height: 600px;
+}
+
+.scrollSpySite {
+    position: relative;
+    overflow: auto;
+    height: 320px;
+}
+
+.button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+}

@@ -1,0 +1,285 @@
+/* GERAL */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0 !important;
+}
+
+/* CABECALHO 1 */
+.menu-principal {
+    width: 100%;
+    height: 60px;
+    background-color: #252323;
+}
+
+main, .content {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo {
+    padding: 16px;
+    width: 70%;
+    float: left;
+}
+
+.redes-sociais {
+    width: 25%;
+    float: right;
+}
+
+.redes-sociais ul li {
+    float: left;
+    list-style: none;
+    margin-left: 18px;
+}
+
+/* CABECALHO 2 */
+
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.menu-urls {
+    border-bottom: 3px solid #efefef;
+    height: 80px;
+}
+
+.header-2 {
+    background-color: #fff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    color: #8b8b8b;
+    margin-left: 15px;
+}
+
+.menu ul li:hover {
+    height: 45px;
+    border-bottom: 2px solid #00bac6;
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #00bac6;
+}
+
+.menu {
+    float: left;
+    text-align: center;
+}
+
+.busca {
+    width: 30%;
+    float: right;
+}
+
+.busca input {
+    border: solid 1px #d6d6d6;
+    outline: none;
+    margin-top: 5px;
+    padding: 10px;
+    width: 190px;
+    background-image: url(/img/icone-search.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+/* CARROCEL DE IMAGENS  */
+
+button.slick-prev {
+    top: 35%;
+    left: 14%;
+    z-index: 9;
+    position: absolute;
+    outline: none;
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    background-color: transparent;
+    background-image: url(/img/anterior.png);
+    cursor: pointer;
+}
+
+button.slick-next {
+    top: 35%;
+    right: 14%;
+    z-index: 9;
+    position: absolute;
+    outline: none;
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    background-color: transparent;
+    background-image: url(/img/proximo.png);
+    cursor: pointer;
+}
+
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 480px;
+}
+
+.slick-list {
+    width: 100% !important;
+}
+
+.slick-initialized {
+    overflow: hidden;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+li.slick-active button{
+background: #00bac6;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+/* CONTEUDO 1 */
+
+.texto-destaque {
+    text-align: center;
+}
+
+.texto-destaque p {
+    color: #9a9a9a;
+    font-size: 15px;
+}
+
+.texto-destaque h1 {
+    color: #818181;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.texto-destaque strong {
+    color: #646464;
+}
+
+/* CONTEUDO 2 */
+.col-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 29%;
+    float: left;
+    position: relative;
+}
+
+.bloco-texto {
+    margin-top: 3em;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+/* CONTEUDO 3 */
+
+.bloco-imagem img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.bloco-imagem {
+    height: 300px;
+    border: 1px solid #c5c5c5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+}
+
+.bloco-imagem b, p {
+    text-align: left;
+}
+
+.bloco-texto {
+    margin-top: 3em;
+}
+
+h3 {
+    font-weight: normal!important;
+}
+
+.bloco-imagens-texto {
+    background-color: #eeeeee;
+}
+.bloco-imagens-texto:before {
+    width: 100%;
+    display: inline-block;
+    content: '';
+    height: 52px;
+    background: #ffffff;
+    background-image: url('../img/setinha.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* CONTEUDO 4 */
+
+.col-4 {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.col-4 img {
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 1em;
+    cursor: pointer;
+}
+
+.button {
+    padding: 10px;
+}
+
+button {
+    width: 100px;
+    padding: 7px;
+    background: #555454;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+a button  {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}

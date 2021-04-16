@@ -7,16 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-main {
+body,main {
     background-color: #f0f0f0;
 }
 
 .container {
     background-color: #fff;
-}
-
-.card {
-    width: 32%;
 }
 
 .login img {
@@ -32,3 +28,13 @@ main {
 .button2 {
     padding-top: 96px;
 }
+
+.content h3,h6 {
+    padding: 20px;
+}
+
+.content div,ul,p {
+    padding-left: 50px;
+}
+
+
