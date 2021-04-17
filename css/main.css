@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body,main {
-    background-color: #f0f0f0;
+body,
+main {
+    background-color: #f0f0f0 !important;
 }
 
 .container {
@@ -29,12 +30,30 @@ body,main {
     padding-top: 96px;
 }
 
-.content h3,h6 {
+.content h3,
+h6 {
     padding: 20px;
 }
 
-.content div,ul,p {
+.content div,
+ul,
+p {
     padding-left: 50px;
 }
 
+.dropdown-menu {
+    left: -100px;
+    top: 116%;
+}
+
+.dropdown-item:focus {
+    background: none;
+    color: #343a40!important;
+}
+
+.dropdown button {
+    border: none;
+    outline: none;
+    background: #343a40!important;
+}
 

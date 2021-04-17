@@ -16,6 +16,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand disable" href="/index.php">Lucas Steinbach</a>
+            <a href="https://github.com/lucaswalmor" target="_blank" class="navbar-brand"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lucas-walmor-steinbach-borges-1a602915a/" target="_blank" class="navbar-brand"><i class="fab fa-linkedin-in"></i></a>
+            <a href="http://api.whatsapp.com/send?phone=5534992021394" target="_blank" class="navbar-brand"><i class="fab fa-whatsapp"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,6 +37,15 @@
                         <a class="nav-link" href="\views\contato.php">Contato</a>
                     </li>
                 </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projetos
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/views/projetos/logins.php">Telas de login</a>
+                    <a class="dropdown-item" href="/views/projetos/sites.php">Telas de Sites</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -102,8 +114,8 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 mb-4 mb-md-0">
                         <blockquote class="blockquote text-center">
-                            <p class="mb-0">O sucesso não é garantido, mas o fracasso é certo se você não estiver
-                                emocionalmente envolvido em seu trabalho</p>
+                            <span class="mb-0">O sucesso não é garantido, mas o fracasso é certo se você não estiver
+                                emocionalmente envolvido em seu trabalho</span>
                             <footer class="blockquote-footer">Biz Stone <cite title="Source Title">Fundador do
                                     Twitter</cite></footer>
                         </blockquote>
