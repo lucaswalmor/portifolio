@@ -1,42 +1,32 @@
 <?php
+require_once '../vendor/autoload.php';
 
-// Importar as classes 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-// Carregar o autoloader do composer
-require '../vendor/autoload.php';
+use PHPMailer\PHPMailer\SMTP;
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $mensagem = $_POST['mensagem'];
 
-// Instância da classe
-$mail = new PHPMailer(true);
-try {
-    // Configurações do servidor
-    $mail->isSMTP();        //Devine o uso de SMTP no envio
-    $mail->SMTPAuth = true; //Habilita a autenticação SMTP
-    $mail->Username   = 'lucaswsb52@gmail.com';
-    $mail->Password   = 'Lukaum123@@';
-    // Criptografia do envio SSL também é aceito
-    $mail->SMTPSecure = 'tls';
-    // Informações específicadas pelo Google
-    $mail->Host = 'smtp.gmail.com';
-    $mail->Port = 587;
-    // Define o remetente
-    $mail->setFrom('lucaswsb52@gmail.com', 'Lucas Steinbach');
-    // Define o destinatário
-    $mail->addAddress('lucaswsb52@gmail.com', $nome);
-    // Conteúdo da mensagem
-    $mail->isHTML(true);  // Seta o formato do e-mail para aceitar conteúdo HTML
-    $mail->Subject = 'Assunto';
-    $mail->Body    = 'Olá, meu nome é ' . $nome . ' Meu email é ' . $email . ', ' . $mensagem;
-    $mail->AltBody = $mensagem;
-    // Enviar
-    $mail->send();
-    header("Location: ../index.php");
-    echo "Mensagem enviada com sucesso";
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+$mail = new PHPMailer();
+$mail->IsSMTP(); // enable SMTP
+// $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+$mail->SMTPAuth = true; // authentication enabled
+$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+$mail->Host = "mail.lucassteinbach.tk";
+$mail->Port = 465; // or 587
+$mail->IsHTML(true);
+$mail->Username = "lucassteinbach@lucassteinbach.tk";
+$mail->Password = "Lucas123@";
+$mail->SetFrom("lucassteinbach@lucassteinbach.tk");
+$mail->Subject = "Assunto da mensagem";
+$mail->Body = "Meu nome " . $nome . ', meu email é ' . $email . ', e essa é minha mensagem: ' . $mensagem;
+$mail->AddAddress("lucaswsb52@gmail.com");
+if (!$mail->Send()) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+} else {
+    header("Location: contato.php?emailenviadocomsucesso=yes");
+    exit();
 }
 ?>

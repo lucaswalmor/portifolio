@@ -42,7 +42,7 @@ p {
 }
 
 .dropdown-menu {
-    left: -100px;
+    max-width: 200px;
     top: 116%;
 }
 
@@ -57,3 +57,7 @@ p {
     background: #343a40!important;
 }
 
+.btn-secondary {
+    padding-top: 8px;
+    color: rgba(255,255,255,.5);
+}

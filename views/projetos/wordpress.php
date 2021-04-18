@@ -59,57 +59,41 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/views/projetos/telas/tela1/tela1.php">Login 1</a>
+                            <a class="nav-link" href="https://streamshopbrasil.com/" target="_blank">Projeto 1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/views/projetos/telas/tela2/tela2.php">Login 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/views/projetos/telas/tela3/tela3.php">Login 3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/views/projetos/telas/tela4/tela4.php">Login 4</a>
+                            <a class="nav-link" href="https://tabacariauai.tk/" target="_blank">Projeto 2</a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
-            <div id="carrocelSite" class="carousel slide " data-ride="carousel">
+            <div id="carrocelWordpress" class="carousel slide " data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carrocelSite" data-slide-to="0" class="active"></li>
-                    <li data-target="#carrocelSite" data-slide-to="1"></li>
-                    <li data-target="#carrocelSite" data-slide-to="2"></li>
-                    <li data-target="#carrocelSite" data-slide-to="3"></li>
+                    <li data-target="#carrocelWordpress" data-slide-to="0" class="active"></li>
+                    <li data-target="#carrocelWordpress" data-slide-to="1"></li>
+                    <li data-target="#carrocelWordpress" data-slide-to="2"></li>
+                    <li data-target="#carrocelWordpress" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/img/Sites_html_css/projeto_logins/login1.png" class="img-fluid imagem" alt="">
+                        <img src="\img\Sites_html_css\wordpress\tabacaria.png" class="img-fluid imagem" alt="">
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/Sites_html_css/projeto_logins/login2.png" class="img-fluid imagem" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/Sites_html_css/projeto_logins/login3.png" class="img-fluid imagem" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/Sites_html_css/projeto_logins/login4.png" class="img-fluid imagem" alt="">
+                        <img src="\img\Sites_html_css\wordpress\webcam.png" class="img-fluid imagem" alt="">
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </div>
                 </div>
 
-                <a href="#carrocelSite" class="carousel-control-prev" role="button" data-slide="prev">
+                <a href="#carrocelWordpress" class="carousel-control-prev" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                     <span class="sr-only">Anterior</span>
                 </a>
 
-                <a href="#carrocelSite" class="carousel-control-next" role="button" data-slide="next">
+                <a href="#carrocelWordpress" class="carousel-control-next" role="button" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                     <span class="sr-only">Próximo</span>
                 </a>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="\css\main.css">
-    <title>Telas de Login</title>
+    <title>Telas de Sites</title>
 </head>
 
 <body>
@@ -50,70 +50,64 @@
     </header>
 
     <main>
-        <div class="container mt-3 mb-5 col-10 p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">Seja Bem-Vindo</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/views/projetos/telas/tela1/tela1.php">Login 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/views/projetos/telas/tela2/tela2.php">Login 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/views/projetos/telas/tela3/tela3.php">Login 3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/views/projetos/telas/tela4/tela4.php">Login 4</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div id="carrocelSite" class="carousel slide " data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carrocelSite" data-slide-to="0" class="active"></li>
-                    <li data-target="#carrocelSite" data-slide-to="1"></li>
-                    <li data-target="#carrocelSite" data-slide-to="2"></li>
-                    <li data-target="#carrocelSite" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/img/Sites_html_css/projeto_logins/login1.png" class="img-fluid imagem" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/Sites_html_css/projeto_logins/login2.png" class="img-fluid imagem" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/Sites_html_css/projeto_logins/login3.png" class="img-fluid imagem" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/Sites_html_css/projeto_logins/login4.png" class="img-fluid imagem" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
+        <div id="carrocelSite" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carrocelSite" data-slide-to="0" class="active"></li>
+                <li data-target="#carrocelSite" data-slide-to="1"></li>
+                <li data-target="#carrocelSite" data-slide-to="2"></li>
+                <li data-target="#carrocelSite" data-slide-to="3"></li>
+                <li data-target="#carrocelSite" data-slide-to="4"></li>
+                <li data-target="#carrocelSite" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="\img\Sites_html_css\projeto_estagio\img1.png" class="img-fluid imagem" alt="">
+                    <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
-
-                <a href="#carrocelSite" class="carousel-control-prev" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-
-                <a href="#carrocelSite" class="carousel-control-next" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
+                <div class="carousel-item">
+                    <img src="\img\Sites_html_css\projeto_estagio\img2.png" class="img-fluid imagem" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="\img\Sites_html_css\projeto_estagio\img3.png" class="img-fluid imagem" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="\img\Sites_html_css\projeto_estagio\img4.png" class="img-fluid imagem" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="\img\Sites_html_css\projeto_estagio\img5.png" class="img-fluid imagem" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="\img\Sites_html_css\projeto_estagio\img6.png" class="img-fluid imagem" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="\img\Sites_html_css\projeto_estagio\img7.png" class="img-fluid imagem" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
             </div>
+            <a href="#carrocelSite" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+
+            <a href="#carrocelSite" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+
         </div>
     </main>
 

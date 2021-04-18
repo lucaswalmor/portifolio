@@ -24,28 +24,27 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/index.php">Inicio</a>
                     </li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projetos
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/views/projetos/logins.php">Telas de login</a>
+                            <a class="dropdown-item" href="/views/projetos/sites.php">Telas de Sites</a>
+                            <a class="dropdown-item" href="/views/projetos/estagio.php">Projeto Estagio</a>
+                            <a class="dropdown-item" href="\views\projetos\wordpress.php">Projeto Wordpress</a>
+                        </div>
+                    </div>
                     <li class="nav-item">
                         <a class="nav-link" href="/views/curriculo.php">Currículo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre mim</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="\views\contato.php">Contato</a>
                     </li>
                 </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projetos
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="views/projetos/logins.php">Telas de login</a>
-                    <a class="dropdown-item" href="/views/projetos/sites.php">Telas de Sites</a>
-                </div>
             </div>
         </nav>
     </header>
@@ -53,7 +52,7 @@
     <main>
         <div class="container-fluid col-lg-12">
             <div class="row mt-3 justify-content-center mx-1">
-                <div class="card mr-2 mb-5 col-md-4 col-lg-3 p-0">
+                <div class="card mr-2 mb-5 col-md-10 col-lg-4 p-0">
                     <div id="carrocelLogins" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carrocelLogins" data-slide-to="0" class="active"></li>
@@ -94,7 +93,7 @@
 
                 </div>
 
-                <div class="card mr-2 mb-5 col-md-4 col-lg-3 p-0">
+                <div class="card mr-2 mb-5 col-md-10 col-lg-4 p-0">
                     <div id="carrocelWebsites" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carrocelWebsites" data-slide-to="0" class="active"></li>
@@ -132,7 +131,8 @@
                     </div>
 
                 </div>
-                <div class="card mb-5 col-md-4 col-lg-3 p-0">
+
+                <div class="card mb-5 col-md-10 col-lg-4 mr-2 p-0">
                     <div id="carrocelEstagio" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carrocelEstagio" data-slide-to="0" class="active"></li>
@@ -169,10 +169,49 @@
                             Laravel</span>
                     </div>
                     <div class="card-footer text-center">
-                        <a href="#" class="btn btn-primary">Visitar</a>
+                        <a href="\views\projetos\estagio.php" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-5 col-md-10 col-lg-4 p-0">
+                    <div id="carrocelWordpress" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carrocelWordpress" data-slide-to="0" class="active"></li>
+                            <li data-target="#carrocelWordpress" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner mt-4">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="\img\Sites_html_css\wordpress\webcam.png" alt="Primeiro Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="\img\Sites_html_css\wordpress\tabacaria.png" alt="Segundo Slide">
+                            </div>
+                            <!-- <div class="carousel-item">
+                                <img class="d-block w-100" src="/img/Sites_html_css/projeto_Wordpress/img7.png" alt="Terceiro Slide">
+                            </div> -->
+                        </div>
+                        <a class="carousel-control-prev" href="#carrocelWordpress" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carrocelWordpress" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+
+                    <div class="card-header text-center">
+                        <h5 class="card-title">Projetos em Wordpress</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <span class="card-text">Alguns trabalhos feitos em wordpress</span>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="\views\projetos\wordpress.php" class="btn btn-primary">Visitar</a>
                     </div>
                 </div>
             </div>
+
 
         </div>
     </main>

@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/index.php">Lucas Steinbach</a>
+            <a class="navbar-brand disable" href="/index.php">Lucas Steinbach</a>
             <a href="https://github.com/lucaswalmor" target="_blank" class="navbar-brand"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/lucas-walmor-steinbach-borges-1a602915a/" target="_blank" class="navbar-brand"><i class="fab fa-linkedin-in"></i></a>
             <a href="http://api.whatsapp.com/send?phone=5534992021394" target="_blank" class="navbar-brand"><i class="fab fa-whatsapp"></i></a>
@@ -24,28 +24,27 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/index.php">Inicio</a>
                     </li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projetos
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/views/projetos/logins.php">Telas de login</a>
+                            <a class="dropdown-item" href="/views/projetos/sites.php">Telas de Sites</a>
+                            <a class="dropdown-item" href="/views/projetos/estagio.php">Projeto Estagio</a>
+                            <a class="dropdown-item" href="\views\projetos\wordpress.php">Projeto Wordpress</a>
+                        </div>
+                    </div>
                     <li class="nav-item">
                         <a class="nav-link" href="/views/curriculo.php">Currículo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre mim</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="\views\contato.php">Contato</a>
                     </li>
                 </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projetos
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/views/projetos/logins.php">Telas de login</a>
-                    <a class="dropdown-item" href="/views/projetos/sites.php">Telas de Sites</a>
-                </div>
             </div>
         </nav>
     </header>
@@ -59,7 +58,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="\views\projetos\Sites\Site1\site1.php">Site 1</a>
                         </li>
                         <li class="nav-item">
@@ -96,7 +95,6 @@
                     </div>
                 </div>
             </div>
-
             <a href="#carrocelSite" class="carousel-control-prev" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
                 <span class="sr-only">Anterior</span>
@@ -106,6 +104,7 @@
                 <span class="carousel-control-next-icon"></span>
                 <span class="sr-only">Próximo</span>
             </a>
+
         </div>
     </main>
 

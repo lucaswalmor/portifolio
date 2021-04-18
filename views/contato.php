@@ -24,28 +24,27 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="\index.php">Inicio</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.php">Inicio</a>
                     </li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projetos
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/views/projetos/logins.php">Telas de login</a>
+                            <a class="dropdown-item" href="/views/projetos/sites.php">Telas de Sites</a>
+                            <a class="dropdown-item" href="/views/projetos/estagio.php">Projeto Estagio</a>
+                            <a class="dropdown-item" href="\views\projetos\wordpress.php">Projeto Wordpress</a>
+                        </div>
+                    </div>
                     <li class="nav-item">
                         <a class="nav-link" href="/views/curriculo.php">Currículo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre mim</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="\views\contato.php">Contato</a>
                     </li>
                 </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Projetos
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/views/projetos/logins.php">Telas de login</a>
-                    <a class="dropdown-item" href="/views/projetos/sites.php">Telas de Sites</a>
-                </div>
             </div>
         </nav>
     </header>
@@ -54,6 +53,17 @@
         <div class="container col-lg-8 col-md-10 col-xs-10">
             <div class="container mt-3 mb-3">
                 <form action="enviarEmail.php" class="pt-5 pb-5" method="POST" autocomplete="off">
+                    <?php
+                    $emailenviadocomsucesso = $_GET['emailenviadocomsucesso'] ?? '';
+                    if ($emailenviadocomsucesso == 'yes') {
+                        echo "<div class='alert alert-success' role='alert'>
+                        Seu email foi enviado com sucesso!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+                    }
+                    ?>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
                         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
